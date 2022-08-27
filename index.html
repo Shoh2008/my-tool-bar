@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/respons.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <style id="styleAdded"></style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="nav">
+        <div class="head">
+            <h1>My Tool Bar</h1>
+        </div>
+        <div class="body">
+            <a href="#calculator">
+                <button>Calculator</button>
+            </a>
+            <a href="#secundomer">
+                <button>Secundomer</button>
+            </a>
+            <a href="#clock">
+                <button>Clock</button>
+            </a>
+            <a href="#battery">
+                <button>Battery</button>
+            </a>
+        </div>
+        <div class="foot">
+            <p>© 2022 by Shohruh</p>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="calculator">
+            <div class="calculator">
+                <div class="head">
+                    <input type="text" id="input">
+                </div>
+                <div class="body">
+                    <button onclick=" clearAll() ">C</button>
+                    <button onclick=" clearOne() ">↶</button>
+                    <button onclick=" drawed('(') ">(</button>
+                    <button onclick=" drawed(')') " class="top">)</button>
+                    <button onclick=" drawed('/') ">÷</button>
+                    <button onclick=" drawed('*') ">×</button>
+                    <button onclick=" drawed('-') ">-</button>
+                    <button onclick=" drawed('+') ">+</button>
+                    <button onclick=" drawed('1') ">1</button>
+                    <button onclick=" drawed('2') ">2</button>
+                    <button onclick=" drawed('3') ">3</button>
+                    <button onclick=" drawed('4') ">4</button>
+                    <button onclick=" drawed('5') ">5</button>
+                    <button onclick=" drawed('6') ">6</button>
+                    <button onclick=" drawed('7') ">7</button>
+                    <button onclick=" drawed('8') ">8</button>
+                    <button onclick=" drawed('.') ">.</button>
+                    <button onclick=" drawed('9') ">9</button>
+                    <button onclick=" drawed('0') ">0</button>
+                    <button onclick=" end() " class="bottom">=</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="secundomer">
+            <div class="secundomer">
+                <div class="block">
+                    <h1 class="minute" id="minute">00</h1>:
+                    <h1 class="secunde" id="secunde">00</h1>
+                    <h5 class="milisecunde" id="milisecunde">00</h5>
+                </div>
+                <div class="inp">
+                    <input type="number" id="minuteInput" placeholder="minute">
+                    <input type="number" id="secundInput" placeholder="secunde">
+                </div>
+                <div class="buttons">
+                    <button onclick=" secundomer('start') "> Start </button>
+                    <button onclick=" secundomer('stop') "> Stop </button>
+                    <button onclick=" secundomer('reset') "> Reset </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="clock">
+            <div class="clock">
+                <div id="hours">00</div>
+                <div id="minutes">00</div>
+                <div id="seconds">00</div>
+                <div id="ampm" class="ampm"></div>
+            </div>
+        </section>
+
+        <section id="battery">
+            <div class="box">
+                <div class="content">
+                    <div class="batteryShape">
+                        <div class="level">
+                            <div class="percentage"></div>
+                        </div>
+                    </div>
+                    <div class="percent">50%</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button class="btnOpenSet" onclick="openSet()">⚙</button>
+    <button class="btnOpenNav" onclick="openNav()">⚔</button>
+
+    <div class="setting" id="setting">
+        <div class="color">
+            <input type="text" id="colorInput" placeholder="Text Color">
+            <input type="text" id="bgColorInput" placeholder="Background Color">
+            <input type="text" id="fontInput" placeholder="Font Familiy">
+            <input type="text" id="cursorColorInput" placeholder="Cursor Color">
+        </div>
+    </div>
+
+    <div id="l1" class="line1"></div>
+    <div id="l2" class="line2"></div>
+    <div id="l3" class="line3"></div>
+    <div id="l4" class="line4"></div>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/calculator.js"></script>
+    <script src="./JS/secundomer.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/battery.js"></script>
+</body>
+
+</html>

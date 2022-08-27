@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+    color: red;
+    background: #1e1e1e;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav {
+    z-index: 500;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 0 10px black;
+    position: fixed;
+    transition: .5s;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+nav .head {
+    width: 290px;
+    height: 15vh;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+nav .body {
+    width: 290px;
+    height: 65vh;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav .body button {
+    font-size: 25px;
+    height: 50px;
+    width: 280px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    border: none;
+    outline: none;
+}
+
+nav .foot {
+    width: 290px;
+    height: 15vh;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 77%;
+    margin-left: 300px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+/* ? calculator */
+/* ? calculator */
+
+.calculator {
+    width: 300px;
+    height: 415px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .head {
+    height: 90px;
+    box-shadow: 0 0 10px black;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .head input {
+    height: 50px;
+    width: 250px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 0 10px black;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: end;
+}
+
+.calculator .body {
+    height: 310px;
+    box-shadow: 0 0 10px black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .body button {
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.top {
+    border-top-right-radius: 40px !important;
+}
+
+.bottom {
+    border-bottom-right-radius: 40px !important;
+}
+
+/* ? calculator */
+/* ? calculator */
+
+/* ? secundomer */
+/* ? secundomer */
+
+.secundomer {
+    height: 300px;
+    width: 415px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundomer .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    font-size: 40px;
+}
+
+.secundomer .block h5 {
+    margin-top: 20px;
+}
+
+.secundomer .inp {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secundomer .inp input {
+    height: 40px;
+    width: 100px;
+    box-shadow: 0 0 10px black;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.secundomer .buttons {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundomer .buttons button {
+    height: 40px;
+    width: 100px;
+    margin: 5px 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* ? secundomer */
+/* ? secundomer */
+
+/* ? clock */
+/* ? clock */
+
+.clock {
+    height: 300px;
+    width: 415px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.clock .ampm {
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+/* ? clock */
+/* ? clock */
+
+/* ? battery */
+/* ? battery */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+}
+
+.box h3 {
+    color: #9c27b0;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.box .batteryShape {
+    position: relative;
+    width: 140px;
+    height: 65px;
+    margin: 20px 0;
+    border: 3px solid#333;
+    border-radius: 10px;
+}
+
+.box .batteryShape::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 16px;
+    background: #333;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.level {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 4px;
+    border-radius: 4px;
+    background-color: #2e2e2e;
+}
+
+.percent {
+    transform: translateY(-60px);
+    background: transparent;
+}
+
+/* ? battery */
+/* ? battery */
+
+section {
+    height: 95vh;
+    width: 95%;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+
+/* !!! cursor */
+/* !!! cursor */
+.line1,
+.line2,
+.line3,
+.line4 {
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 2000;
+    position: absolute;
+    display: none;
+    height: 10px;
+    width: 10px;
+    transition: .1s cubic-bezier(0, 0, 1, 1.01);
+}
+
+.line1 {
+    transform: translate(-50%, -250%);
+}
+
+.line2 {
+    transform: translate(150%, -50%);
+}
+
+.line3 {
+    transform: translate(-50%, 150%);
+}
+
+.line4 {
+    transform: translate(-250%, -50%);
+}
+
+/* !!! cursor */
+/* !!! cursor */
+
+/* set */
+
+.btnOpenSet,
+.btnOpenNav {
+    z-index: 999;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: 5px 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btnOpenSet {
+    top: 10px;
+    right: 10px;
+}
+
+.btnOpenNav {
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+
+.setting {
+    height: 250px;
+    width: 300px;
+    transition: .5s;
+    position: absolute;
+    border-radius: 5px;
+    top: 10px;
+    right: -310px;
+    box-shadow: 0 0 20px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.setting input {
+    height: 40px;
+    width: 280px;
+    box-shadow: 0 0 10px black;
+    outline: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 20px;
+    border: none;
+}
+
+/* set */
